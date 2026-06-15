@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   # Información profesional principal
   psychologistName = "Victoria Sepúlveda"
   profession = "Psicóloga Clínica | Psicopedagoga | Terapeuta Floral"
-  registry = "Núm. Colegiado 905105"
+  registry = "Registro RNPI N° 905105"
   tagline = "Acompañamiento psicológico para mujeres, adolescentes y familias, cálido y efectivo, para que vuelvas a sentirte en equilibrio."
   email = "contacto@mipsicologaonline.cl"
   phone = "+56 9 4297 5944"
@@ -22,7 +22,7 @@ disableKinds = ["taxonomy", "term"]
 
   # Enlaces de agenda y perfiles profesionales
   bookingUrl = "https://clinifica.com/pro/ps-victoria-sepulveda-bastias"
-  doctoraliaUrl = "https://www.doctoralia.cl/victoria-sepulveda-bastias-2/psicologo-psicopedagogo/san-carlos"
+  # doctoraliaUrl = "https://www.doctoralia.cl/victoria-sepulveda-bastias-2/psicologo-psicopedagogo/san-carlos"
   reviewsUrl = "https://www.doctoralia.cl/victoria-sepulveda-bastias-2/psicologo-psicopedagogo/san-carlos#profile-reviews"
   clinificaUrl = "https://clinifica.com/pro/ps-victoria-sepulveda-bastias"
 
