@@ -74,5 +74,5 @@ faqs:
     - q: "¿Con qué frecuencia debo asistir?"
       a: "Habitualmente es semanal o quincenal, pero lo definimos según tu proceso y objetivos."
     - q: "¿Cómo agendo una hora?"
-      a: "Puedes reservar online directamente en mi perfil de Clinifica o de Doctoralia."
+      a: "Puedes reservar online en mi perfil de Clinifica o de Doctoralia, o escribirme por WhatsApp y coordinamos juntas."
 ---

@@ -15,6 +15,8 @@ disableKinds = ["taxonomy", "term"]
   registry = "Núm. Colegiado 905105"
   tagline = "Acompañamiento psicológico para mujeres, adolescentes y familias, cálido y efectivo, para que vuelvas a sentirte en equilibrio."
   email = "contacto@mipsicologaonline.cl"
+  phone = "+56 9 4297 5944"
+  whatsapp = "56942975944"
   location = "Atención 100% online en todo Chile"
   price = "Sesiones desde $25.000"
 
@@ -25,14 +27,14 @@ disableKinds = ["taxonomy", "term"]
   clinificaUrl = "https://clinifica.com/pro/ps-victoria-sepulveda-bastias"
 
   # Imagen de perfil (déjala en static/images/)
-  profileImage = "/images/profile.svg"
+  profileImage = "/images/profile.jpeg"
 
   description = "Psicóloga clínica y psicopedagoga online. Acompañamiento para mujeres, adolescentes y familias: autoestima, ansiedad, depresión, maternidad, vínculos, género y aprendizaje. Sesiones por videollamada en todo Chile."
 
   [params.social]
-    instagram = "https://instagram.com/"
+    instagram = "https://www.instagram.com/ps.victoriasepulveda/"
     linkedin = "https://linkedin.com/in/victoria-s-b70100297"
-    facebook = "https://facebook.com/"
+    # facebook = "https://facebook.com/"
 
 # Menú de navegación
 [[menu.main]]

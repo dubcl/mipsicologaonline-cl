@@ -13,6 +13,7 @@
     <div class="footer-contact">
       <h3>Contacto</h3>
       <ul class="contact-list">
+        {{ with .Site.Params.whatsapp }}<li><a href="https://wa.me/{{ . }}" target="_blank" rel="noopener">WhatsApp · {{ $.Site.Params.phone }}</a></li>{{ end }}
         <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
       </ul>
       <div class="social">
