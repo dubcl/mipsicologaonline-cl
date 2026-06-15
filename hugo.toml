@@ -33,7 +33,7 @@ disableKinds = ["taxonomy", "term"]
 
   [params.social]
     instagram = "https://www.instagram.com/ps.victoriasepulveda/"
-    linkedin = "https://linkedin.com/in/victoria-s-b70100297"
+    # linkedin = "https://linkedin.com/in/victoria-s-b70100297"
     # facebook = "https://facebook.com/"
 
 # Menú de navegación
