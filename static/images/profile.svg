@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Foto de perfil (reemplazar por una imagen real)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7eee5"/>
+      <stop offset="1" stop-color="#f6e6db"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <g fill="#7c9a86" opacity="0.9">
+    <circle cx="200" cy="200" r="78"/>
+    <path d="M200 300c-78 0-140 52-140 116v84h280v-84c0-64-62-116-140-116z"/>
+  </g>
+  <text x="200" y="470" text-anchor="middle" font-family="Nunito Sans, sans-serif" font-size="20" fill="#5c7866">Reemplaza por tu foto</text>
+</svg>

@@ -1,0 +1,64 @@
+baseURL = "https://mipsicologaonline.cl/"
+defaultContentLanguage = "es"
+title = "Mi Psicóloga Online"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[languages.es]
+  locale = "es-CL"
+  label = "Español"
+
+[params]
+  # Información profesional principal
+  psychologistName = "Victoria Sepúlveda"
+  profession = "Psicóloga Clínica | Psicopedagoga | Terapeuta Floral"
+  registry = "Núm. Colegiado 905105"
+  tagline = "Acompañamiento psicológico para mujeres, adolescentes y familias, cálido y efectivo, para que vuelvas a sentirte en equilibrio."
+  email = "contacto@mipsicologaonline.cl"
+  location = "Atención 100% online en todo Chile"
+  price = "Sesiones desde $25.000"
+
+  # Enlaces de agenda y perfiles profesionales
+  bookingUrl = "https://clinifica.com/pro/ps-victoria-sepulveda-bastias"
+  doctoraliaUrl = "https://www.doctoralia.cl/victoria-sepulveda-bastias-2/psicologo-psicopedagogo/san-carlos"
+  reviewsUrl = "https://www.doctoralia.cl/victoria-sepulveda-bastias-2/psicologo-psicopedagogo/san-carlos#profile-reviews"
+  clinificaUrl = "https://clinifica.com/pro/ps-victoria-sepulveda-bastias"
+
+  # Imagen de perfil (déjala en static/images/)
+  profileImage = "/images/profile.svg"
+
+  description = "Psicóloga clínica y psicopedagoga online. Acompañamiento para mujeres, adolescentes y familias: autoestima, ansiedad, depresión, maternidad, vínculos, género y aprendizaje. Sesiones por videollamada en todo Chile."
+
+  [params.social]
+    instagram = "https://instagram.com/"
+    linkedin = "https://linkedin.com/in/victoria-s-b70100297"
+    facebook = "https://facebook.com/"
+
+# Menú de navegación
+[[menu.main]]
+  name = "Inicio"
+  url = "#inicio"
+  weight = 1
+[[menu.main]]
+  name = "Sobre mí"
+  url = "#sobre-mi"
+  weight = 2
+[[menu.main]]
+  name = "Servicios"
+  url = "#servicios"
+  weight = 3
+[[menu.main]]
+  name = "Cómo funciona"
+  url = "#como-funciona"
+  weight = 4
+[[menu.main]]
+  name = "Opiniones"
+  url = "#opiniones"
+  weight = 5
+[[menu.main]]
+  name = "Contacto"
+  url = "#contacto"
+  weight = 6
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -1,0 +1,39 @@
+<footer class="site-footer" id="contacto">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="brand brand--footer">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text">{{ .Site.Params.psychologistName }}</span>
+      </div>
+      <p>{{ .Site.Params.profession }}</p>
+      <p class="muted">{{ .Site.Params.registry }}</p>
+      <p class="muted">{{ .Site.Params.location }}</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <ul class="contact-list">
+        <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+      </ul>
+      <div class="social">
+        {{ with .Site.Params.social.instagram }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>{{ end }}
+        {{ with .Site.Params.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>{{ end }}
+        {{ with .Site.Params.social.facebook }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>{{ end }}
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <h3>Agenda online</h3>
+      <ul class="contact-list">
+        {{ with .Site.Params.clinificaUrl }}<li><a href="{{ . }}" target="_blank" rel="noopener">Reservar en Clinifica</a></li>{{ end }}
+        {{ with .Site.Params.doctoraliaUrl }}<li><a href="{{ . }}" target="_blank" rel="noopener">Reservar en Doctoralia</a></li>{{ end }}
+      </ul>
+      <a href="{{ .Site.Params.bookingUrl }}" class="btn" target="_blank" rel="noopener">Agendar mi sesión</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© {{ now.Year }} {{ .Site.Params.psychologistName }} · {{ .Site.Title }}. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

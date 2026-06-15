@@ -1,0 +1,152 @@
+{{ define "main" }}
+
+{{/* ---------- HERO ---------- */}}
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ .Site.Params.profession }} · Online</p>
+      <h1>{{ .Site.Params.tagline }}</h1>
+      <p class="lead">{{ .Site.Params.location }}. Sesiones por videollamada en un espacio seguro y confidencial.</p>
+      <div class="hero-actions">
+        <a href="{{ .Site.Params.doctoraliaUrl }}" class="btn" target="_blank" rel="noopener">Agendar primera sesión</a>
+        <a href="#servicios" class="btn btn-ghost">Conocer más</a>
+      </div>
+      <ul class="hero-badges">
+        <li><span aria-hidden="true">🔒</span> Confidencial</li>
+        <li><span aria-hidden="true">💻</span> 100% Online</li>
+        <li><span aria-hidden="true">🇨🇱</span> Todo Chile</li>
+      </ul>
+    </div>
+    <div class="hero-figure">
+      <div class="hero-photo">
+        <img src="{{ .Site.Params.profileImage | relURL }}" alt="{{ .Site.Params.psychologistName }}, {{ .Site.Params.profession }}" loading="eager">
+      </div>
+      <div class="hero-card">
+        <strong>{{ .Site.Params.psychologistName }}</strong>
+        <span>{{ .Site.Params.profession }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---------- ABOUT ---------- */}}
+{{ with .Params.about }}
+<section class="section about" id="sobre-mi">
+  <div class="container about-grid">
+    <div class="about-text">
+      <p class="eyebrow">{{ .title }}</p>
+      <h2>{{ .subtitle }}</h2>
+      {{ range .paragraphs }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <div class="about-side">
+      <ul class="checklist">
+        {{ range .highlights }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ---------- SERVICES ---------- */}}
+{{ with .Params.services }}
+<section class="section services" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ .title }}</p>
+      <h2>{{ .subtitle }}</h2>
+    </div>
+    <div class="cards">
+      {{ range .items }}
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">{{ .icon }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ---------- STEPS ---------- */}}
+{{ with .Params.steps }}
+<section class="section steps" id="como-funciona">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ .title }}</p>
+      <h2>{{ .subtitle }}</h2>
+    </div>
+    <div class="steps-grid">
+      {{ range .items }}
+      <div class="step">
+        <span class="step-num">{{ .number }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ---------- TESTIMONIALS ---------- */}}
+{{ with .Params.testimonials }}
+<section class="section testimonials" id="opiniones">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">{{ .title }}</p>
+      <h2>{{ .subtitle }}</h2>
+    </div>
+    <div class="quotes">
+      {{ range .items }}
+      <figure class="quote">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>{{ .text }}</blockquote>
+        <figcaption>— {{ .name }}</figcaption>
+      </figure>
+      {{ end }}
+    </div>
+    {{ with $.Site.Params.reviewsUrl }}
+    <p class="reviews-more">
+      <a href="{{ . }}" target="_blank" rel="noopener">Ver todas las opiniones en Doctoralia →</a>
+    </p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ---------- FAQ ---------- */}}
+{{ with .Params.faqs }}
+<section class="section faq">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <p class="eyebrow">{{ .title }}</p>
+      <h2>Resolvamos tus dudas</h2>
+    </div>
+    <div class="faq-list">
+      {{ range .items }}
+      <details class="faq-item">
+        <summary>{{ .q }}</summary>
+        <p>{{ .a }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ---------- CTA BANNER ---------- */}}
+<section class="cta-banner">
+  <div class="container">
+    <h2>Tu bienestar emocional merece un espacio</h2>
+    <p>Da el primer paso hoy. Agenda tu sesión y conversemos sobre cómo puedo acompañarte.</p>
+    <a href="{{ .Site.Params.bookingUrl }}" class="btn btn-light" target="_blank" rel="noopener">Quiero agendar mi sesión</a>
+  </div>
+</section>
+
+{{ end }}
