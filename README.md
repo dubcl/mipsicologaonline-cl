@@ -28,6 +28,21 @@ hugo --minify
 El sitio final queda en `public/`, listo para subir a cualquier hosting estático
 (Netlify, Cloudflare Pages, GitHub Pages, etc.).
 
+## Despliegue automático (GitHub Pages)
+
+El repo incluye un workflow en `.github/workflows/hugo.yaml` que compila y publica
+el sitio en GitHub Pages con cada push a `main`.
+
+Pasos para activarlo (una sola vez):
+
+1. En GitHub: **Settings → Pages → Build and deployment → Source** = **GitHub Actions**.
+2. (Dominio propio) En **Settings → Pages → Custom domain** escribe `mipsicologaonline.cl`.
+   El archivo `static/CNAME` ya deja fijado ese dominio en cada build.
+3. Apunta el DNS del dominio a GitHub Pages:
+   - Registros `A` de `mipsicologaonline.cl` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Registro `CNAME` de `www` → `dubcl.github.io`
+4. Haz push a `main`: el workflow construye con Hugo extended y despliega solo.
+
 ## Cómo personalizar
 
 Casi todo el contenido se edita sin tocar HTML:
